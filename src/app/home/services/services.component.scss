@@ -1,0 +1,176 @@
+.headline {
+  width: 100%;
+  height: 80vh;
+  //min-height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.253)),
+    url("../../../assets/BgImages/services.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  p {
+    color: white;
+  }
+}
+
+.lightButton {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #00000000;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  //max-width: 300px;
+}
+
+////
+///
+///
+/// Head
+
+.heading {
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+  h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+  }
+}
+
+//// text-bg-img
+//
+
+.text-bg-img-out {
+  padding: 40px;
+}
+
+.text-bg-img {
+  display: flex;
+  justify-content: left;
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  border-radius: 50px;
+  padding: 100px 50px;
+
+  h1 {
+    font-size: 2.7rem;
+    color: white;
+    font-weight: bolder;
+  }
+  p {
+    text-align: justify;
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+.bg-text-left {
+  max-width: 100%;
+  width: 400px;
+}
+
+
+@media screen and (max-width: 377px) {
+
+    .text-bg-img{
+        padding: 50px 30px;
+    }
+    
+}
+
+//// Other Services
+/// 
+
+
+////IntheNews
+
+.inTheNewsOut {
+    padding: 100px 20px;
+    
+  }
+  
+  .inTheNews {
+    h1 {
+        font-size: 3.3rem;
+        font-weight: bolder;
+        color: white;
+        margin-left: 50px;
+      }
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(223deg, #25008f 12.84%, #008ef5 75.68%);
+    border-radius: 50px;
+    padding: 50px 0;
+  }
+  
+  
+  .newsOut {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .news {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: auto;
+    transition: all 1s;
+  }
+  
+  .singleNews {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 300px;
+    height: auto;
+    min-height: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+      b {
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+      }
+    }
+  
+    hr {
+      color: white;
+      border-top: 3px solid white;
+      opacity: 1;
+      margin-bottom: 5px;
+    }
+  }
+
+
+
+  

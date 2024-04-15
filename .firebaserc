@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ananttajcloud": {
+      "hosting": {
+        "AnantRajCloud": [
+          "ananttajcloud"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ananttajcloud"
+  }
+}

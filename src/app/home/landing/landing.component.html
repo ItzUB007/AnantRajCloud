@@ -12,17 +12,53 @@
         <li class="nav-item nav-with-sub"><a href="#">Home</a></li>
 
         <li class="nav-item nav-with-sub">
-          <a href="#"
+          <a href="services"
             >Our Services<img
               src="../../../assets/misc/down-arrow.png"
               alt="arrow"
           /></a>
-          <section class="sub-nav-item">
-            <ul>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
-            </ul>
+          <section
+            class="sub-nav-item" style="transform: translateX(-200px);"
+          >
+            <section style="display: flex; justify-content: space-around; width: 600px; ">
+
+
+              <div>
+                <div class="sub-nav-text-icon">
+                  <img
+                    src="../../../assets/Logos/dropdowns/coservices.png"
+                    alt=""
+                  />
+                  <p>Co Location Services:</p>
+                </div>
+                <ul>
+                  <li><a href="#">Rack space</a></li>
+                  <li><a href="#">Dedicated server hall/suite</a></li>
+                  <li><a href="#">Dedicated server floor space</a></li>
+                  <li>
+                    <a href="#"
+                      >Server rack cage</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="sub-nav-text-icon">
+                  <img
+                    src="../../../assets/Logos/dropdowns/otherService.png"
+                    alt=""
+                  />
+                  <p>Other Services:</p>
+                </div>
+                <ul>
+                  <li><a href="#">Smart Hands</a></li>
+                  <li><a href="#">Secure Office Space</a></li>
+                  <li><a href="#">Value-Added Services</a></li>
+                </ul>
+              </div>
+
+
+            </section>
           </section>
         </li>
         <li class="nav-item nav-with-sub">
@@ -31,9 +67,18 @@
           /></a>
           <section class="sub-nav-item">
             <ul>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
+              <li><a href="#">5 tier security</a></li>
+              <li><a href="#">24/7 Monitoring and Support</a></li>
+              <li>
+                <a href="#"
+                  >Concurrently Maintainable Design - As per Tier III & Rated 3
+                  Redundancy.</a
+                >
+              </li>
+              <li><a href="#">Green Building (IGBC pre-certified)</a></li>
+              <li>
+                <a href="#">High Bandwidth Connectivity (2 MMRs, 2MDAs)</a>
+              </li>
             </ul>
           </section>
         </li>
@@ -45,23 +90,40 @@
           /></a>
           <section class="sub-nav-item">
             <ul>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
-              <li><a href="#">new1</a></li>
+              <li><a href="#">Manesar</a></li>
+              <li><a href="#">Rai</a></li>
+              <li><a href="#">Panchkula</a></li>
             </ul>
           </section>
         </li>
-        <li class="nav-item nav-with-sub">
+        <li class="nav-item nav-with-sub" >
           <a href="#"
             >About Us
             <img src="../../../assets/misc/down-arrow.png" alt="arrow"
           /></a>
 
           <section class="sub-nav-item">
-            <ul>
-              <li><a href="#">Company Overview</a></li>
-              <li><a href="#">Sustainability</a></li>
-            </ul>
+            <div class="sub-nav-text-icon">
+              <img
+                src="../../../assets/Logos/dropdowns/companyOverview.png"
+                alt=""
+              />
+              <p><a href="">Company Overview</a></p>
+            </div>
+            <div class="sub-nav-text-icon">
+              <img
+                src="../../../assets/Logos/dropdowns/Sustainability.png"
+                alt=""
+              />
+              <p><a href="">Sustainability</a></p>
+            </div>
+            <div class="sub-nav-text-icon">
+              <img
+                src="../../../assets/Logos/dropdowns/contactUs.png"
+                alt=""
+              />
+              <p><a href="">Contact Us</a></p>
+            </div>
           </section>
         </li>
 
@@ -71,16 +133,7 @@
       </ul>
     </nav>
   </div>
-  <section class="headline">
-    <h1 style="font-weight: lighter; font-size: 2rem">ANANT RAJ CLOUD</h1>
-    <h1>
-      Infinite Scale <br />
-      Boundless Possibilities
-    </h1>
-    <p>Entrust your data with Anant Raj Limited</p>
-
-    <button class="lightButton" type="button">Explore Our Services</button>
-  </section>
+  
 </div>
 
 <router-outlet></router-outlet>
@@ -96,7 +149,11 @@
 
   <div class="footerLinks">
     <div class="footerLogos">
-      <img class="anantLogoFooter" src="../../../assets/Logos/AnantRajCloud.png" alt="" />
+      <img
+        class="anantLogoFooter"
+        src="../../../assets/Logos/AnantRajCloud.png"
+        alt=""
+      />
 
       <div class="socials">
         <img
@@ -115,8 +172,13 @@
     </div>
 
     <div class="links">
-      <p><a href="">Company <br> Overview</a></p>
-      <br>
+      <p>
+        <a href=""
+          >Company <br />
+          Overview</a
+        >
+      </p>
+      <br />
       <ul>
         <li><a href="">Vision</a></li>
         <li><a href="">Mission</a></li>
@@ -126,14 +188,23 @@
 
     <div class="links">
       <p><a href="">Services</a></p>
-      <br>
+      <br />
       <ul>
-        <li><a href=""><b>Co Location Services:</b></a></li>
+        <li>
+          <a href=""><b>Co Location Services:</b></a>
+        </li>
         <li><a href="">Rack space</a></li>
         <li><a href="">Dedicated server hall/suite</a></li>
         <li><a href="">Dedicated server floor space</a></li>
-        <li><a href="">Server rack cage/ Secure Cage <br> with Multi Factor Authentication</a></li>
-        <li><a href=""><b>Other services:</b></a></li>
+        <li>
+          <a href=""
+            >Server rack cage/ Secure Cage <br />
+            with Multi Factor Authentication</a
+          >
+        </li>
+        <li>
+          <a href=""><b>Other services:</b></a>
+        </li>
         <li><a href="">Smart Hands</a></li>
         <li><a href="">Secure Office Space</a></li>
         <li><a href="">Value-Added Services</a></li>
@@ -142,7 +213,7 @@
 
     <div class="links">
       <p><a href="">Features</a></p>
-      <br>
+      <br />
       <ul>
         <li><a href="">Vision</a></li>
         <li><a href="">Mission</a></li>
@@ -152,7 +223,7 @@
 
     <div class="links">
       <p><a href="">Locations</a></p>
-      <br>
+      <br />
       <ul>
         <li><a href="">Vision</a></li>
         <li><a href="">Mission</a></li>
@@ -164,9 +235,6 @@
       <p><a href="">In the News</a></p>
       <p><a href="">Blogs</a></p>
       <p><a href="">Contact Us</a></p>
-      
     </div>
-
   </div>
-
 </footer>

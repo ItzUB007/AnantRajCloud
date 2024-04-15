@@ -16,17 +16,25 @@ export class HomeComponent implements OnInit {
   NewsnumberOfScrolls:any;
   NewstimesScrolled:any = 0;
 
+
+  services:any;
+  servicesTranslated: any = 0;
+  servicesnumberOfScrolls:any;
+  servicestimesScrolled:any = 0;
+
   ngOnInit(): void {
     this.vendorLogos = document.querySelector('.vendorLogos');
     this.News = document.querySelector('.news');
+    this.services = document.querySelector('.services');
 
     this.NewsnumberOfScrolls = Math.round((this.News.offsetWidth - screen.width)/300);
     this.numberOfScrolls = Math.round((this.vendorLogos.offsetWidth - screen.width)/200);
-
+    this.servicesnumberOfScrolls = Math.round((this.vendorLogos.offsetWidth - screen.width)/300);
     
 
     console.log(this.numberOfScrolls);
     console.log(this.NewsnumberOfScrolls);
+    console.log(this.servicesnumberOfScrolls);
 
   }
 
@@ -86,6 +94,38 @@ export class HomeComponent implements OnInit {
         'translateX(' + this.NewsTranslated + 'px)';
 
     this.NewstimesScrolled = this.NewstimesScrolled + 1;
+
+    }
+
+  }
+
+
+
+  servicesLeft() {
+
+    console.log(this.servicestimesScrolled)
+
+    if (this.servicestimesScrolled != 0) {
+      this.servicesTranslated += 200;
+
+      this.servicestimesScrolled = this.servicestimesScrolled - 1;
+
+      this.services.style.transform =
+        'translateX(' + this.servicesTranslated + 'px)';
+    }
+    
+  }
+
+  servicesRight() {
+    
+
+    console.log(this.servicestimesScrolled)
+    if (this.servicesnumberOfScrolls+1 > this.servicestimesScrolled) {
+      this.servicesTranslated -= 200;
+      this.services.style.transform =
+        'translateX(' + this.servicesTranslated + 'px)';
+
+    this.servicestimesScrolled = this.servicestimesScrolled + 1;
 
     }
 
