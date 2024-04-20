@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-attachment: fixed;
   justify-content: center;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -237,7 +238,7 @@
 ///Our Services
 
 .ourServicesOut {
-  padding: 100px 50px;
+  padding: 100px 5%;
   h1 {
     font-size: 3.5rem;
     font-weight: bolder;
@@ -249,7 +250,7 @@
   width: 100%;
   //background-image: linear-gradient(223deg, #F42727 12.84%, #A90000 75.68%);
   //border-radius: 50px;
-  padding: 20px 50px;
+  padding: 20px 5%;
 }
 
 .text-control-services {
@@ -414,6 +415,7 @@
 
 
 .strategicPartners{ 
+  text-align: center;
   border-radius: 50px;
   padding: 100px 0;
   background-image: linear-gradient(223deg, #25008f 12.84%, #008ef5 75.68%);
@@ -448,7 +450,7 @@
 .globalVenders {
   height: auto;
   width: 100%;
-  padding: 100px 50px;
+  padding: 100px 5%;
 }
 
 .text-control {
@@ -495,7 +497,7 @@
 .vendorLogosOut {
   position: relative;
   overflow-x: hidden;
-  height: 200px;
+  height: 300px;
 }
 
 .vendorLogos {
@@ -504,28 +506,37 @@
   width: auto;
   position: absolute;
   transition: all 1s;
+  ///
+  justify-content: center;
+  align-items: center;
+  img{
+    height: 100%;
+    width: 200px;
+    margin-left: 20px;
+  }
+  //
 }
 
-.vendorSingleLogo {
+/*.vendorSingleLogo {
   margin-left: 10px;
   padding: 5px;
   width: 200px;
   height: 100px;
-  border: 1px solid black;
-  border-radius: 20px;
+  //border: 1px solid black;
+  //border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     max-height: 100%;
-    max-width: 100%;
+    width: 100%;
   }
-}
+}*/
 
 ////IntheNews
 
 .inTheNewsOut {
-  padding: 100px 50px;
+  padding: 100px 5%;
   h1 {
     font-size: 3.5rem;
     font-weight: bolder;
@@ -537,7 +548,7 @@
   width: 100%;
   background-image: linear-gradient(223deg, #f42727 12.84%, #a90000 75.68%);
   border-radius: 50px;
-  padding: 50px 50px;
+  padding: 50px 5%;
 }
 
 .text-control-news {

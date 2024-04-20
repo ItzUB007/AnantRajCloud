@@ -27,14 +27,74 @@ export class HomeComponent implements OnInit {
     this.News = document.querySelector('.news');
     this.services = document.querySelector('.services');
 
-    this.NewsnumberOfScrolls = Math.round((this.News.offsetWidth - screen.width)/300);
-    this.numberOfScrolls = Math.round((this.vendorLogos.offsetWidth - screen.width)/200);
-    this.servicesnumberOfScrolls = Math.round((this.vendorLogos.offsetWidth - screen.width)/300);
+    this.NewsnumberOfScrolls = Math.round((this.News.offsetWidth - screen.width)/310);
+    this.numberOfScrolls = Math.round((this.vendorLogos.offsetWidth - screen.width)/220);
+    this.servicesnumberOfScrolls = Math.round((this.services.offsetWidth - screen.width)/310);
     
 
     console.log(this.numberOfScrolls);
     console.log(this.NewsnumberOfScrolls);
     console.log(this.servicesnumberOfScrolls);
+
+    setInterval(()=>{
+
+      if(this.timesScrolled <= this.numberOfScrolls){
+
+        //for Logos
+        this.right();
+      }
+      else{
+        //For Logos
+        this.timesScrolled = 0;
+        this.LogosTranslated = 0;
+        this.vendorLogos.style.transform =
+        'translateX(' + this.LogosTranslated + 'px)';
+      }
+
+
+    }, 3000)
+
+    setInterval(()=>{
+
+      if(this.NewstimesScrolled <= this.NewsnumberOfScrolls){
+
+        //for News
+        this.newsRight();
+
+      }
+      else{
+
+        //For News
+        this.NewstimesScrolled = 0;
+        this.NewsTranslated = 0;
+        this.News.style.transform =
+        'translateX(' + this.NewsTranslated + 'px)';
+
+      }
+
+
+    }, 3000)
+
+    setInterval(()=>{
+
+      if(this.servicestimesScrolled <= this.servicesnumberOfScrolls){
+
+        //for Services
+        this.servicesRight();
+
+      }
+      else{
+        
+        //For Services
+        this.servicestimesScrolled = 0;
+        this.servicesTranslated = 0;
+        this.services.style.transform =
+        'translateX(' + this.servicesTranslated + 'px)';
+
+      }
+
+
+    }, 3000)
 
   }
 
@@ -43,7 +103,7 @@ export class HomeComponent implements OnInit {
     console.log(this.timesScrolled)
 
     if (this.timesScrolled != 0) {
-      this.LogosTranslated += 200;
+      this.LogosTranslated += 220;
 
       this.timesScrolled = this.timesScrolled - 1;
 
@@ -58,7 +118,7 @@ export class HomeComponent implements OnInit {
 
     console.log(this.timesScrolled)
     if (this.numberOfScrolls+1 > this.timesScrolled) {
-      this.LogosTranslated -= 200;
+      this.LogosTranslated -= 220;
       this.vendorLogos.style.transform =
         'translateX(' + this.LogosTranslated + 'px)';
 
@@ -74,7 +134,7 @@ export class HomeComponent implements OnInit {
     console.log(this.NewstimesScrolled)
 
     if (this.NewstimesScrolled != 0) {
-      this.NewsTranslated += 200;
+      this.NewsTranslated += 310;
 
       this.NewstimesScrolled = this.NewstimesScrolled - 1;
 
@@ -89,7 +149,7 @@ export class HomeComponent implements OnInit {
 
     console.log(this.NewstimesScrolled)
     if (this.NewsnumberOfScrolls+1 > this.NewstimesScrolled) {
-      this.NewsTranslated -= 200;
+      this.NewsTranslated -= 310;
       this.News.style.transform =
         'translateX(' + this.NewsTranslated + 'px)';
 
@@ -106,7 +166,7 @@ export class HomeComponent implements OnInit {
     console.log(this.servicestimesScrolled)
 
     if (this.servicestimesScrolled != 0) {
-      this.servicesTranslated += 200;
+      this.servicesTranslated += 310;
 
       this.servicestimesScrolled = this.servicestimesScrolled - 1;
 
@@ -121,7 +181,7 @@ export class HomeComponent implements OnInit {
 
     console.log(this.servicestimesScrolled)
     if (this.servicesnumberOfScrolls+1 > this.servicestimesScrolled) {
-      this.servicesTranslated -= 200;
+      this.servicesTranslated -= 310;
       this.services.style.transform =
         'translateX(' + this.servicesTranslated + 'px)';
 

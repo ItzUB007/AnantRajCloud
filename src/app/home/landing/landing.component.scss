@@ -173,7 +173,7 @@ h2 {
 .sub-nav-text-icon{
   text-align: left;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   margin: 10px 0;
   img{
     height: 40px;
@@ -181,6 +181,7 @@ h2 {
     filter: brightness(1) invert(0);
   }
   p{
+    margin-left: 10px;
     a{
       color: black;
     }

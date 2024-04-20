@@ -1,0 +1,153 @@
+.headline {
+    width: 100%;
+    height: 80vh;
+    //min-height: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.253)),
+      url("../../../assets/BgImages/CompanyOverview.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+    }
+    p {
+      color: white;
+    }
+  }
+  
+  .lightButton {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #00000000;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    //max-width: 300px;
+  }
+
+
+
+  .Overview{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-image: url(../../../assets/BgImages/services.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5% 5%;
+  }
+
+
+  .overviewText{
+    padding: 10% 2%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    p{
+        color: white;
+        font-size: 1rem;
+    }
+  }
+
+
+
+  ///Vision and Mission
+  /// 
+  /// 
+  .visionMissionOut{
+    padding: 5% 5%;
+  }
+
+  .visionMission{
+    border-radius: 50px;
+    padding: 5%;
+    background-image: url(../../../assets/images/CompanyOverview/1081087_68.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+
+  .visionMissionText{
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    h1{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 1rem;
+    }
+  }
+
+
+  .founder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    h1{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    p{
+        text-align: justify;
+        font-size: 1rem;
+        width: 500px;
+        max-width: 100%;
+        margin-left: 20px;
+    }
+  }
+
+  .founderImg{
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    border-radius: 50px;
+    background-image: url(../../../assets/images/FounderfaceSketch.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  @media screen and (max-width: 760px) {
+
+    .founder{
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            margin-top: 20px;
+        }
+    }
+
+    .founderImg{
+        margin-top: 20px;
+    }
+    
+  }
