@@ -1,0 +1,81 @@
+<section class="headline">
+    <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+      Contact Us
+    </h1>
+    <!--<p>Co location Services | Other Services</p>-->
+  </section>
+
+
+<section class="section-bg" style="background-image: url(../../../assets/images/Services/ManesarITPark-1.png);"  data-scroll-index="7">
+    <div class="overlay pt-100 pb-100 ">
+      <div class="container">
+         <div class="row">
+              <div class="col-lg-6 d-flex align-items-center">
+                  <div class="contact-info">
+
+                      <h2 class="contact-title">Have Any Questions?</h2>
+                      <p>Thank you for reaching out to us. We're here to assist you. Please feel free to contact us using the information below:</p>
+                      <ul class="contact-info">
+                          <li>
+                            <div class="info-left">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="info-right">
+                                <h4>+91-88261 88442</h4>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-left">
+                                <i class="fas fa-at"></i>
+                            </div>
+                            <div class="info-right">
+                                <h4>Contact@anantrajcloud.com</h4>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-left">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-right">
+                                <h4>Connaught Place, New Delhi, India</h4>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center">
+                      <div class="contact-form">
+                                  <!--Contact Form-->
+                                  <form id='contact-form'  [formGroup]="this.form" (ngSubmit)="submit(this.form.value)"><input type='hidden' name='form-name' value='contactForm' />
+                                      <div class="row">
+                                         <div class="col-md-12">
+                                            <div class="form-group">
+                                               <input formControlName="Name" type="text" name="name" class="form-control" id="first-name" placeholder="Enter Your Name *" required="required">
+                                            </div>
+                                         </div>
+                                         <div class="col-md-12">
+                                            <div class="form-group">
+                                               <input formControlName="Email" type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email *" required="required">
+                                            </div>
+                                         </div>
+
+                                         <div class="col-md-12">
+                                            <div class="form-group">
+                                                 <textarea formControlName="Message" rows="4" name="message" class="form-control" id="description" placeholder="Enter Your Message *" required="required"></textarea>
+                                            </div>
+                                         </div>
+                                          <div class="col-md-12">
+                                            <p>{{msg}}</p>
+                                              <!--contact button-->
+                                              <button  class="btn-big btn btn-bg">
+                                                  Send Us <i class="fas fa-arrow-right"></i>
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+              </div>
+         </div>
+     </div>
+        </div>
+  </section>

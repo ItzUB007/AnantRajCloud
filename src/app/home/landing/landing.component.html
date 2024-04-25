@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <div class="grad-bar"></div>
     <nav class="navbar">
-      <img [src]="logoPath" alt="Company Logo" />
+      <a href="/"><img [src]="logoPath" alt="Company Logo" /></a>
       <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -17,12 +17,10 @@
               src="../../../assets/misc/down-arrow.png"
               alt="arrow"
           /></a>
-          <section
-            class="sub-nav-item" style="transform: translateX(-200px);"
-          >
-            <section style="display: flex; justify-content: space-around; width: 600px; ">
-
-
+          <section class="sub-nav-item" style="transform: translateX(-200px)">
+            <section
+              style="display: flex; justify-content: space-around; width: 600px"
+            >
               <div>
                 <div class="sub-nav-text-icon">
                   <img
@@ -32,13 +30,19 @@
                   <p>Co Location Services:</p>
                 </div>
                 <ul>
-                  <li><a href="#">Rack space</a></li>
-                  <li><a href="#">Dedicated server hall/suite</a></li>
-                  <li><a href="#">Dedicated server floor space</a></li>
+                  <li><a href="services#RackSpace">Rack space</a></li>
                   <li>
-                    <a href="#"
-                      >Server rack cage</a
+                    <a href="services#DedicatedServerHall"
+                      >Dedicated server hall/suite</a
                     >
+                  </li>
+                  <li>
+                    <a href="services#DedicatedServerFloorSpace"
+                      >Dedicated server floor space</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services#ServerRackCage">Server rack cage</a>
                   </li>
                 </ul>
               </div>
@@ -51,13 +55,17 @@
                   <p>Other Services:</p>
                 </div>
                 <ul>
-                  <li><a href="#">Smart Hands</a></li>
-                  <li><a href="#">Secure Office Space</a></li>
-                  <li><a href="#">Value-Added Services</a></li>
+                  <li><a href="services#smartHands">Smart Hands</a></li>
+                  <li>
+                    <a href="services#secureOfficeSpace">Secure Office Space</a>
+                  </li>
+                  <li>
+                    <a href="services#valueAddedService"
+                      >Value-Added Services</a
+                    >
+                  </li>
                 </ul>
               </div>
-
-
             </section>
           </section>
         </li>
@@ -65,19 +73,26 @@
           <a href="features"
             >Features<img src="../../../assets/misc/down-arrow.png" alt="arrow"
           /></a>
-          <section class="sub-nav-item" style="width: 500px; transform: translateX(-200px);">
+          <section
+            class="sub-nav-item"
+            style="width: 500px; transform: translateX(-200px)"
+          >
             <ul>
-              <li><a href="#">5 tier security</a></li>
-              <li><a href="#">24/7 Monitoring and Support</a></li>
+              <li><a href="features#5TierSecurity">Multiple Security Layers</a></li>
               <li>
-                <a href="#"
-                  >Concurrently Maintainable Design - As per Tier III & Rated 3
-                  Redundancy.</a
+                <a href="features#uninterruptedServices"
+                  >Uninterrupted Services</a
                 >
               </li>
-              <li><a href="#">Green Building (IGBC pre-certified)</a></li>
               <li>
-                <a href="#">High Bandwidth Connectivity (2 MMRs, 2MDAs)</a>
+                <a href="features#NNRedundancy"
+                  >N+N redundancy for UPS & telecom infrastructure</a
+                >
+              </li>
+              <li>
+                <a href="features#highBandwidth"
+                  >High Bandwidth Connectivity (2 MMRs, 2MDAs)</a
+                >
               </li>
             </ul>
           </section>
@@ -90,39 +105,39 @@
           /></a>
           <section class="sub-nav-item">
             <ul>
-              <li><a href="#">Manesar</a></li>
-              <li><a href="#">Rai</a></li>
-              <li><a href="#">Panchkula</a></li>
+              <li><a href="locations#locations">Manesar</a></li>
+              <li><a href="locations#locations">Rai</a></li>
+              <li><a href="locations#locations">Panchkula</a></li>
             </ul>
           </section>
         </li>
-        <li class="nav-item nav-with-sub" >
+        <li class="nav-item nav-with-sub">
           <a href="company"
             >About Us
             <img src="../../../assets/misc/down-arrow.png" alt="arrow"
           /></a>
 
-          <section class="sub-nav-item" style="width: 300px; transform: translateX(-150px);">
+          <section
+            class="sub-nav-item"
+            style="width: 300px; transform: translateX(-150px)"
+          >
             <div class="sub-nav-text-icon">
               <img
                 src="../../../assets/Logos/dropdowns/companyOverview.png"
                 alt=""
               />
-              <p><a href="company">Company Overview</a></p>
+              <p><a href="company#companyOverview">Company Overview</a></p>
             </div>
-            <div class="sub-nav-text-icon">
+            <!--<div class="sub-nav-text-icon">
               <img
                 src="../../../assets/Logos/dropdowns/Sustainability.png"
                 alt=""
               />
-              <p><a href="">Sustainability</a></p>
-            </div>
+              <p><a href="company#companyOverview">Sustainability</a></p>
+            </div>-->
             <div class="sub-nav-text-icon">
-              <img
-                src="../../../assets/Logos/dropdowns/contactUs.png"
-                alt=""
-              />
-              <p><a href="">Contact Us</a></p>
+              <img src="../../../assets/Logos/dropdowns/contactUs.png" alt="" />
+              <p><a href="contact">Contact Us</a></p>
             </div>
           </section>
         </li>
@@ -133,7 +148,6 @@
       </ul>
     </nav>
   </div>
-  
 </div>
 
 <router-outlet></router-outlet>
@@ -141,33 +155,33 @@
 <footer class="footerSection">
   <div class="footerTextButton">
     <h1>Ready to work with us ?</h1>
-    <button>
+    <a href="contact">
       Get Started
       <img src="../../../assets/images/right-arrow.png" alt="arrow" />
-    </button>
+    </a>
   </div>
 
   <div class="footerLinks">
     <div class="footerLogos">
-      <img
+      <a href="/"><img
         class="anantLogoFooter"
         src="../../../assets/Logos/AnantRajCloud.png"
         alt=""
-      />
+      /></a>
 
       <div class="socials">
-        <img
+        <a href="https://www.facebook.com/profile.php?id=100092759263819" target="_blank"><img
           src="../../../assets/images/SocialMedia/facebook.png"
           alt="facebook"
-        />
-        <img
+        /></a>
+        <a href="https://www.instagram.com/anantrajcloud/" target="_blank"><img
           src="../../../assets/images/SocialMedia/instagram.png"
-          alt="facebook"
-        />
-        <img
+          alt="instagram"
+        /></a>
+        <a href="https://www.linkedin.com/company/anantraj-cloud/?originalSubdomain=in" target="_blank"><img
           src="../../../assets/images/SocialMedia/linkedin.png"
-          alt="facebook"
-        />
+          alt="linkedin"
+        /></a>
       </div>
     </div>
 
@@ -180,34 +194,36 @@
       </p>
       <br />
       <ul>
-        <li><a href="">Vision</a></li>
-        <li><a href="">Mission</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="company#visionMission">Vision</a></li>
+        <li><a href="company#visionMission">Mission</a></li>
+        <li><a href="company">About Us</a></li>
       </ul>
     </div>
 
     <div class="links">
-      <p><a href="">Services</a></p>
+      <p><a href="services">Services</a></p>
       <br />
       <ul>
-        <li>
+        <!--<li>
           <a href=""><b>Co Location Services:</b></a>
-        </li>
-        <li><a href="">Rack space</a></li>
-        <li><a href="">Dedicated server hall/suite</a></li>
-        <li><a href="">Dedicated server floor space</a></li>
+        </li>-->
+        <li><a href="services#RackSpace">Rack space</a></li>
         <li>
-          <a href=""
-            >Server rack cage/ Secure Cage <br />
-            with Multi Factor Authentication</a
+          <a href="services#DedicatedServerHall">Dedicated server hall/suite</a>
+        </li>
+        <li>
+          <a href="services#DedicatedServerFloorSpace"
+            >Dedicated server floor space</a
           >
         </li>
+        <li><a href="services#ServerRackCage">Server rack cage</a></li>
+
         <li>
-          <a href=""><b>Other services:</b></a>
+          <a><b>Other services:</b></a>
         </li>
-        <li><a href="">Smart Hands</a></li>
-        <li><a href="">Secure Office Space</a></li>
-        <li><a href="">Value-Added Services</a></li>
+        <li><a href="services#smartHands">Smart Hands</a></li>
+        <li><a href="services#secureOfficeSpace">Secure Office Space</a></li>
+        <li><a href="services#valueAddedServices">Value-Added Services</a></li>
       </ul>
     </div>
 
@@ -215,9 +231,20 @@
       <p><a href="">Features</a></p>
       <br />
       <ul>
-        <li><a href="">Vision</a></li>
-        <li><a href="">Mission</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="features#5TierSecurity">5 tier security</a></li>
+        <li>
+          <a href="features#uninterruptedServices">Uninterrupted Services</a>
+        </li>
+        <li>
+          <a href="features#NNRedundancy"
+            >N+N redundancy for UPS & telecom infrastructure</a
+          >
+        </li>
+        <li>
+          <a href="features#highBandwidth"
+            >High Bandwidth Connectivity (2 MMRs, 2MDAs)</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -225,16 +252,15 @@
       <p><a href="">Locations</a></p>
       <br />
       <ul>
-        <li><a href="">Vision</a></li>
-        <li><a href="">Mission</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="locations#locations">Manesar</a></li>
+        <li><a href="locations#locations">Rai</a></li>
+        <li><a href="locations#locations">Panchkula</a></li>
       </ul>
     </div>
 
     <div class="links">
-      <p><a href="">In the News</a></p>
-      <p><a href="">Blogs</a></p>
-      <p><a href="">Contact Us</a></p>
+      <!--<p><a href="/#news">In the News</a></p>-->
+      <p><a href="contact">Contact Us</a></p>
     </div>
   </div>
 </footer>

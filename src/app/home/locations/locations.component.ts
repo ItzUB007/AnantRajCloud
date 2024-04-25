@@ -14,6 +14,17 @@ export class LocationsComponent implements OnInit {
 
   
   ngOnInit(): void {
+
+
+    window.onload = function () {
+      var hash = window.location.hash.substr(1); // Get the hash fragment from the URL, excluding the #
+      if (hash) {
+        var section = document.getElementById(hash);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    };
     
     this.services = document.querySelector('.services');
 
@@ -41,7 +52,7 @@ export class LocationsComponent implements OnInit {
       }
 
 
-    }, 3000)
+    }, 6000)
 
 
   }

@@ -32,11 +32,16 @@ export class LandingComponent implements OnInit {
 
       if(window.scrollY > 10){
         document.querySelector('.navbar')?.classList.add('scrolling');
-        this.logoPath = '../../../assets/Logos/Anant Raj Limited.png'
+        this.logoPath = '../../../assets/Logos/Anant Raj Limited.png';
+
+        document.querySelectorAll(".bar").forEach((x:any) => x.style.backgroundColor = "#3f3f3f")
+
       }
       else{
         document.querySelector('.navbar')?.classList.remove('scrolling');
         this.logoPath = '../../../assets/Logos/AnantRajCloud.png'
+
+        document.querySelectorAll(".bar").forEach((x:any) => x.style.backgroundColor = "white")
 
       }
 
