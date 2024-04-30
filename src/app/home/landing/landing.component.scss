@@ -42,7 +42,7 @@ h2 {
   position: fixed;
   top: 0;
   background-color: #ffffff00;
-  z-index: 2;
+  z-index: 3;
 }
 
 .grad-bar {
@@ -131,10 +131,10 @@ h2 {
 }
 
 @keyframes dropdownAnim {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
@@ -154,7 +154,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    list-style:circle;
+    list-style: circle;
     margin: 0;
     min-width: 200px;
     li {
@@ -169,28 +169,25 @@ h2 {
   }
 }
 
-
-.sub-nav-text-icon{
+.sub-nav-text-icon {
   text-align: left;
   display: flex;
   justify-content: start;
   margin: 10px 0;
-  img{
+  img {
     height: 40px;
     width: auto;
     filter: brightness(1) invert(0);
   }
-  p{
+  p {
     margin-left: 10px;
-    a{
+    a {
       color: black;
     }
     color: black;
   }
 }
 /* SECTIONS */
-
-
 
 .invisible {
   display: none;
@@ -545,13 +542,103 @@ input {
   }
 }
 
-
 @media screen and (max-width: 700px) {
-
-  *{
-      h1{
-          font-size: 80%;
-      }
+  * {
+    h1 {
+      font-size: 80%;
+    }
   }
-  
+}
+
+.coverPage {
+  transition: all 3s;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  video {
+    background-color: white;
+    min-height: 100%;
+    z-index: 4;
+  }
+  img {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 100px;
+    width: 100px;
+    z-index: 6;
+  }
+}
+
+.coverButton {
+  position: absolute;
+  z-index: 6;
+  bottom: 5%;
+  background-color: #00000000;
+  color: rgba(255, 255, 255, 0.555);
+  font-weight: bolder;
+  border: none;
+  padding: 10px 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  img{
+    height: 100%;
+    width: auto;
+    filter: invert(1);
+    opacity: 0.55;
+  }
+  //border: 2px white solid;
+  //border-radius: 30px;
+  //animation: bounce 4s infinite ease-in-out;
+}
+
+/*.coverButton:hover {
+  background-color: white;
+  color: #000;
+}*/
+
+.gradient {
+  position: absolute;
+  background: radial-gradient(
+    90% 90% at center,
+    rgba(0, 0, 0, 0.101),
+    rgba(0, 0, 0, 0.949)
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+
+@keyframes bounce{
+  0%{
+      transform: translateY(0);
+  }
+  3%{
+      transform: translateY(-70px);
+  }
+  5%{
+      transform: translateY(5px);
+  }
+  8%{
+      transform: translateY(-25px);
+  }
+  11%{
+      transform: translateY(2px);
+  }
+  14%{
+      transform: translateY(-15px);
+  }
+  20%{
+      transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
