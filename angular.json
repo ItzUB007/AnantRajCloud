@@ -50,10 +50,7 @@
                   "maximumError": "40kb"
                 }
               ],
-              "outputHashing": "all",
-              "assets": [
-              "src/web.config"
-              ]
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,
