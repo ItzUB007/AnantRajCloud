@@ -27,6 +27,6 @@ import { ContactComponent } from './contact/contact.component';
     HomeRoutingModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
 })
 export class HomeModule { }
