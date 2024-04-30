@@ -10,6 +10,7 @@ import { FeaturesComponent } from './features/features.component';
 import { CompanyoverviewComponent } from './companyoverview/companyoverview.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ContactComponent } from './contact/contact.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -28,5 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     ReactiveFormsModule
   ],
+  providers:[
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ]
 })
 export class HomeModule { }
