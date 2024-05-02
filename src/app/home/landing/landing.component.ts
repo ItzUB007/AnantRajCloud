@@ -22,7 +22,7 @@ export class LandingComponent implements OnInit {
         this.cover.style.pointerEvents = 'none';
         this.body.style.overflowY = 'scroll';
 
-        var date = new Date().getTime() + (30*60*60*1000);
+        var date = new Date().getTime() + (30*60*1000);
 
         console.log(date);
 

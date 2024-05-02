@@ -561,8 +561,14 @@ input {
   justify-content: center;
   align-items: center;
   z-index: 4;
+  background: linear-gradient(rgba(0, 0, 0, 0.297), rgba(0, 0, 0, 0.314)),
+    url("../../../assets/BgImages/Main2.JPG");
+  background-attachment: fixed;
+  background-size: cover;
   video {
+    position: absolute;
     background-color: white;
+    min-width: 100%;
     min-height: 100%;
     z-index: 4;
   }
