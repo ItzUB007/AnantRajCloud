@@ -30,20 +30,20 @@ export class HomeComponent implements OnInit {
     this.services = document.querySelector('.services');
 
     this.NewsnumberOfScrolls = Math.ceil(
-      (this.News.offsetWidth - screen.width) / 310
+      (this.News.offsetWidth - screen.width) / 260
     );
     this.numberOfScrolls = Math.ceil(
       (this.vendorLogos.offsetWidth - screen.width) / 220
     );
     this.servicesnumberOfScrolls = Math.ceil(
-      (this.services.offsetWidth - screen.width) / 310
+      (this.services.offsetWidth - screen.width) / 260
     );
 
     console.log(this.numberOfScrolls);
     console.log(this.NewsnumberOfScrolls);
     console.log(this.servicesnumberOfScrolls);
 
-    setInterval(() => {
+    /*setInterval(() => {
       if (this.timesScrolled <= this.numberOfScrolls) {
         //for Logos
         this.right();
@@ -79,7 +79,7 @@ export class HomeComponent implements OnInit {
         this.services.style.transform =
           'translateX(' + this.servicesTranslated + 'px)';
       }
-    }, 6000);
+    }, 6000);*/
   }
 
   left() {
@@ -110,7 +110,7 @@ export class HomeComponent implements OnInit {
     console.log(this.NewstimesScrolled);
 
     if (this.NewstimesScrolled != 0) {
-      this.NewsTranslated += 310;
+      this.NewsTranslated += 260;
 
       this.NewstimesScrolled = this.NewstimesScrolled - 1;
 
@@ -121,7 +121,7 @@ export class HomeComponent implements OnInit {
   newsRight() {
     console.log(this.NewstimesScrolled);
     if (this.NewsnumberOfScrolls + 1 > this.NewstimesScrolled) {
-      this.NewsTranslated -= 310;
+      this.NewsTranslated -= 260;
       this.News.style.transform = 'translateX(' + this.NewsTranslated + 'px)';
 
       this.NewstimesScrolled = this.NewstimesScrolled + 1;
@@ -132,7 +132,7 @@ export class HomeComponent implements OnInit {
     console.log(this.servicestimesScrolled);
 
     if (this.servicestimesScrolled != 0) {
-      this.servicesTranslated += 310;
+      this.servicesTranslated += 260;
 
       this.servicestimesScrolled = this.servicestimesScrolled - 1;
 
@@ -144,7 +144,7 @@ export class HomeComponent implements OnInit {
   servicesRight() {
     console.log(this.servicestimesScrolled);
     if (this.servicesnumberOfScrolls + 1 > this.servicestimesScrolled) {
-      this.servicesTranslated -= 310;
+      this.servicesTranslated -= 260;
       this.services.style.transform =
         'translateX(' + this.servicesTranslated + 'px)';
 

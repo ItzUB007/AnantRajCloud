@@ -7,7 +7,7 @@
     height: 80vh;
     //min-height: 350px;
     background: linear-gradient(rgba(0, 0, 0, 0.297), rgba(0, 0, 0, 0.314)),
-      url("../../../assets/images/Locations/bg.jpg");
+      url("../../../assets/images/Services/ManesarITPark-1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -116,13 +116,20 @@
       font-weight: bolder;
     }
   }
-  
+
+
   .arrows-services {
-    display: flex;
+    display: none;
     justify-content: space-around;
     width: 140px;
     height: auto;
   }
+
+  @media only screen and (max-width: 1033px) {
+    .arrows-services {
+      display: flex;
+    }
+  }  
   
   .arrow-services {
     cursor: pointer;

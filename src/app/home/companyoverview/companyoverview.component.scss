@@ -43,7 +43,15 @@
 }
 //////////////////////
 
-
+.transparentButton {
+  background-color: #008ff500;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  width: fit-content;
+  padding: 10px 50px;
+  text-decoration: none;
+}
 
   .Overview{
     overflow-x: hidden;

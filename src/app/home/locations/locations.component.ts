@@ -33,7 +33,7 @@ export class LocationsComponent implements OnInit {
     console.log(this.servicesnumberOfScrolls);
 
 
-    setInterval(()=>{
+    /*setInterval(()=>{
 
       if(this.servicestimesScrolled <= this.servicesnumberOfScrolls){
 
@@ -52,7 +52,7 @@ export class LocationsComponent implements OnInit {
       }
 
 
-    }, 6000)
+    }, 6000)*/
 
 
   }
