@@ -11,8 +11,8 @@
     flex-direction: column;
     background-attachment: fixed;
     justify-content: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     text-align: center;
     h1 {
       font-size: 3rem;
@@ -68,7 +68,7 @@
 
   .overviewText{
     padding: 10% 2%;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.311);
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
   }
 
   .visionMission{
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 5%;
     background-image: url(../../../assets/images/CompanyOverview/1081087_68.jpg);
     background-position: center;

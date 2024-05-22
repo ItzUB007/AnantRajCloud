@@ -11,8 +11,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   text-align: center;
   h1 {
     font-size: 3rem;
@@ -76,7 +76,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 100px 50px;
 
   h1 {
@@ -126,7 +126,7 @@
     height: auto;
     width: 100%;
     background-image: linear-gradient(223deg, #25008f 12.84%, #008ef5 75.68%);
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 50px 0;
   }
   
@@ -148,7 +148,7 @@
   .singleNews {
     margin-top: 20px;
     margin-left: 10px;
-    width: 300px;
+    width: 400px;
     height: auto;
     min-height: 500px;
     max-width: 100%;

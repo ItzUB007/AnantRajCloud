@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
       (this.vendorLogos.offsetWidth - screen.width) / 220
     );
     this.servicesnumberOfScrolls = Math.ceil(
-      (this.services.offsetWidth - screen.width) / 260
+      (this.services.offsetWidth - screen.width) / 300
     );
 
     console.log(this.numberOfScrolls);

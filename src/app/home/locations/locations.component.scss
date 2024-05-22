@@ -15,8 +15,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     text-align: center;
     h1 {
       font-size: 3rem;
@@ -92,7 +92,7 @@
 ///Our Services
 
 .ourServicesOut {
-    padding: 100px 5%;
+    padding: 50px 5%;
     h1 {
       font-size: 3.5rem;
       font-weight: bolder;
@@ -174,7 +174,7 @@
   
   .singleService {
     margin-left: 10px;
-    width: 300px;
+    width: 400px;
     min-height: 500px;
     border-radius: 20px;
     display: flex;
