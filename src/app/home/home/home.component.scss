@@ -146,9 +146,19 @@
   padding: 50px 50px;
   h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
   }
+}
+
+@media screen and (max-width: 350px) {
+  
+  .aboutCompanyOut{
+    h1{
+      font-size: 2rem;
+    }
+  }
+
 }
 
 .aboutCompanyBoxes {

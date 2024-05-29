@@ -15,7 +15,7 @@ export class LandingComponent implements OnInit {
   body: any;
 
 
-  disableCover(){
+  /*disableCover(){
     console.log('Ended');
         this.cover.style.opacity = '0';
         this.cover.style.transform = "scale(" + 7 + ")"; //translateX(" + (800) + "px) 
@@ -35,10 +35,10 @@ export class LandingComponent implements OnInit {
         setInterval(() => {
           this.cover.style.display = 'none';
         }, 4000);
-  }
+  }*/
 
   ngOnInit(): void {
-    this.videoPlayedString = localStorage.getItem('videoPlayed');
+    /*this.videoPlayedString = localStorage.getItem('videoPlayed');
 
     this.videoPlayed = JSON.parse(this.videoPlayedString);
     this.video = document.getElementById('player');
@@ -68,7 +68,7 @@ export class LandingComponent implements OnInit {
         this.disableCover();
       },
       false
-    );
+    );*/
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
 
