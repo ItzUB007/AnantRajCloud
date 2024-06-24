@@ -13,10 +13,25 @@ const routes: Routes = [
   { path: "", component: LandingComponent, children: [
 
     { path: "", component: HomeComponent  },
-    { path: "services", component: ServicesComponent },
-    { path: "features", component: FeaturesComponent },
-    { path: "company", component: CompanyoverviewComponent },
-    { path: "locations", component: LocationsComponent },
+    { 
+      path: "services", 
+      component: ServicesComponent,
+      title: "Data Center Services by Anant Raj Cloud"
+    },
+    { 
+      path: "features", 
+      component: FeaturesComponent,
+      title: "Discover Advanced Data Center Features at Anant Raj Cloud"
+    },
+    { path: "company", 
+      component: CompanyoverviewComponent,
+      title: "About Anant Raj Cloud | Leading Data Center Company in India"
+     },
+    { 
+      path: "locations", 
+      component: LocationsComponent, 
+      title: "Our Data Center Locations in India | Anant Raj Cloud"
+    },
     { path: "contact", component: ContactComponent },
   ] 
  }

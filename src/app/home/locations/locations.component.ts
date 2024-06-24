@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-locations',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./locations.component.scss']
 })
 export class LocationsComponent implements OnInit {
+
+  constructor(private meta: Meta) {}
 
   services:any;
   servicesTranslated: any = 0;
@@ -15,6 +18,8 @@ export class LocationsComponent implements OnInit {
   
   ngOnInit(): void {
 
+    this.meta.addTag({ name: 'description', 
+      content: 'Find more about our strategically located data centers across India, providing easy access and robust infrastructure to support your business.' });
 
     window.onload = function () {
       var hash = window.location.hash.substr(1); // Get the hash fragment from the URL, excluding the #
