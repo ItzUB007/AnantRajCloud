@@ -7,6 +7,7 @@ import { FeaturesComponent } from './features/features.component';
 import { CompanyoverviewComponent } from './companyoverview/companyoverview.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddBlogComponent } from './add-blog/add-blog.component';
 
 const routes: Routes = [
 
@@ -33,6 +34,7 @@ const routes: Routes = [
       title: "Our Data Center Locations in India | Anant Raj Cloud"
     },
     { path: "contact", component: ContactComponent },
+    //{ path: "addblog", component: AddBlogComponent },
   ] 
  }
 

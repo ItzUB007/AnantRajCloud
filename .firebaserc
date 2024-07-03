@@ -6,9 +6,16 @@
           "ananttajcloud"
         ]
       }
+    },
+    "anantrajcloud-397e0": {
+      "hosting": {
+        "AnantRajCloud": [
+          "anantrajcloud-397e0"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "ananttajcloud"
+    "default": "anantrajcloud-397e0"
   }
 }

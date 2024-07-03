@@ -10,6 +10,9 @@ import { FeaturesComponent } from './features/features.component';
 import { CompanyoverviewComponent } from './companyoverview/companyoverview.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddBlogComponent } from './add-blog/add-blog.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -20,13 +23,16 @@ import { ContactComponent } from './contact/contact.component';
     FeaturesComponent,
     CompanyoverviewComponent,
     LocationsComponent,
-    ContactComponent
+    ContactComponent,
+    AddBlogComponent,
+    BlogsComponent,
+    BlogComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers:[
   ]
