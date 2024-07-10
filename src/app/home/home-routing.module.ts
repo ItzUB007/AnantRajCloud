@@ -7,7 +7,10 @@ import { FeaturesComponent } from './features/features.component';
 import { CompanyoverviewComponent } from './companyoverview/companyoverview.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ContactComponent } from './contact/contact.component';
-import { AddBlogComponent } from './add-blog/add-blog.component';
+import { AddBlogsComponent } from './add-blogs/add-blogs.component';
+import { BlogComponent } from './blog/blog.component';
+import { AllBlogsComponent } from './all-blogs/all-blogs.component';
+import { authGuard } from '../services/auth.guard';
 
 const routes: Routes = [
 
@@ -34,7 +37,9 @@ const routes: Routes = [
       title: "Our Data Center Locations in India | Anant Raj Cloud"
     },
     { path: "contact", component: ContactComponent },
-    //{ path: "addblog", component: AddBlogComponent },
+    { path: "addblogs", component: AddBlogsComponent, canActivate: [authGuard] },
+    { path: "blog", component: BlogComponent  },
+    { path: "allblog", component: AllBlogsComponent  },
   ] 
  }
 

@@ -1,1 +1,14 @@
-<p>blog works!</p>
+<div id="top"></div>
+
+<div class="header" style="background-image: url({{blog.ImageLink}})">
+    <div class="info">
+    <!--<h4><a >{{blog.Category}}</a></h4>-->
+      <h1>{{blog.BlogTitle}}</h1>
+      <div class="meta">
+        By <a>{{blog.Author}}</a> on {{blog.Date}}
+      </div>
+    </div>
+  </div>
+  <section class="content">
+    <div [innerHTML]="blog.BlogText"></div>
+  </section>

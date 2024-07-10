@@ -1,0 +1,35 @@
+<section class="headline">
+    <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        Add Blogs
+    </h1>
+    <!--<p>Co location Services | Other Services</p>-->
+  </section>
+  
+  <section class="editor">
+    <h1>Add Your Blog</h1>
+    <editor class="tinymce" [init]="editorConfig" [(ngModel)]="BlogText" (onChange)="onEditorChange()"></editor>
+    <br>
+    <br>
+    <label for="title">Title</label>
+    <input type="text" name="title" [(ngModel)]="BlogTitle">
+  
+    <label for="Category">Category</label>
+    <input type="text" name="Category" [(ngModel)]="Category">
+  
+    <label for="author">Author</label>
+    <input type="text" name="author" [(ngModel)]="Author">
+  
+    <label for="ImageLink">Image Link</label>
+    <input type="text" name="ImageLink" [(ngModel)]="ImageLink">
+  
+    <label for="Date">Date</label>
+    <input type="text" name="Date" [(ngModel)]="Date">
+  
+    <label for="Summary">Short Summary</label>
+    <input type="text" name="Summary" [(ngModel)]="Summary">
+  
+  
+    <button class="ButtonOne" (click)="addBlog()">Add Blog</button>
+  
+  </section>
+  
