@@ -11,6 +11,7 @@ import { AddBlogsComponent } from './add-blogs/add-blogs.component';
 import { BlogComponent } from './blog/blog.component';
 import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 import { authGuard } from '../services/auth.guard';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes = [
 
@@ -40,6 +41,7 @@ const routes: Routes = [
     { path: "addblogs", component: AddBlogsComponent, canActivate: [authGuard] },
     { path: "blog", component: BlogComponent  },
     { path: "allblog", component: AllBlogsComponent  },
+    { path: "sitemap", component: SitemapComponent  },
   ] 
  }
 

@@ -14,6 +14,7 @@ import { BlogComponent } from './blog/blog.component';
 import { AddBlogsComponent } from './add-blogs/add-blogs.component';
 import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
     ContactComponent,
     BlogComponent,
     AddBlogsComponent,
-    AllBlogsComponent
+    AllBlogsComponent,
+    SitemapComponent
   ],
   imports: [
     CommonModule,
