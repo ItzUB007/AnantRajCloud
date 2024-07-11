@@ -30,6 +30,7 @@
               "src/assets",
               "src/web.config",
               "src/routes.json",
+              "src/sitemap.xml",
               {
                 "glob": "**/*",
                 "input": "node_modules/tinymce",
